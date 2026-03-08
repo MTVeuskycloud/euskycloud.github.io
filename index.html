@@ -1,59 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <title>EuSkyCloud</title>
 
 <style>
+
 body{
+margin:0;
 font-family:Arial;
+background:#f5f7fb;
+}
+
+header{
+background:#0a2540;
+color:white;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
 text-align:center;
-margin-top:100px;
+padding:100px 20px;
+background:white;
 }
 
-.lang{
-display:none;
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
 }
 
-button{
-margin:5px;
-padding:8px 15px;
-cursor:pointer;
+.hero p{
+font-size:18px;
+color:#555;
 }
+
+.services{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:60px;
+}
+
+.card{
+background:white;
+padding:30px;
+width:250px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#0a2540;
+color:white;
+margin-top:50px;
+}
+
 </style>
-
-<script>
-function setLang(lang){
-document.getElementById("de").style.display="none";
-document.getElementById("en").style.display="none";
-document.getElementById(lang).style.display="block";
-}
-</script>
-
 </head>
 
 <body>
 
- <p>
-<a href="index.html">Startseite</a> |
-<a href="services.html">Leistungen</a>
-</p> 
+<header>
+<h2>EuSkyCloud</h2>
 
-  
-<button onclick="setLang('de')">Deutsch</button>
-<button onclick="setLang('en')">English</button>
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</nav>
 
-<div id="de" class="lang" style="display:block;">
-<h1>Willkommen bei EuSkyCloud</h1>
-<p>Cloud-Lösungen | Microsoft 365 | Server-Infrastruktur</p>
+</header>
+
+<section class="hero">
+
+<h1>Cloud & Microsoft 365 Lösungen</h1>
+
+<p>Moderne IT-Infrastruktur für Unternehmen</p>
+
+</section>
+
+<section class="services">
+
+<div class="card">
+<h3>Microsoft 365</h3>
+<p>Einrichtung, Verwaltung und Support.</p>
+</div>
+
+<div class="card">
+<h3>Cloud Backup</h3>
+<p>Sichere Backup Lösungen für Unternehmen.</p>
+</div>
+
+<div class="card">
+<h3>IT Infrastruktur</h3>
+<p>Server, Netzwerk und IT Betreuung.</p>
+</div>
+
+</section>
+
+<footer>
+
 <p>Kontakt: info@euskycloud.com</p>
-</div>
 
-<div id="en" class="lang">
-<h1>Welcome to EuSkyCloud</h1>
-<p>Cloud Solutions | Microsoft 365 | Server Infrastructure</p>
-<p>Contact: info@euskycloud.com</p>
-</div>
+</footer>
 
 </body>
 </html>
