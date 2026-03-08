@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>EuSkyCloud</title>
 <meta charset="UTF-8">
+<title>EuSkyCloud</title>
+
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:100px;
+}
+
+.lang{
+display:none;
+}
+
+button{
+margin:5px;
+padding:8px 15px;
+cursor:pointer;
+}
+</style>
+
+<script>
+function setLang(lang){
+document.getElementById("de").style.display="none";
+document.getElementById("en").style.display="none";
+document.getElementById(lang).style.display="block";
+}
+</script>
+
 </head>
 
-<body style="font-family: Arial; text-align:center; margin-top:100px;">
+<body>
 
+<button onclick="setLang('de')">Deutsch</button>
+<button onclick="setLang('en')">English</button>
+
+<div id="de" class="lang" style="display:block;">
+<h1>Willkommen bei EuSkyCloud</h1>
+<p>Cloud-Lösungen | Microsoft 365 | Server-Infrastruktur</p>
+<p>Kontakt: info@euskycloud.com</p>
+</div>
+
+<div id="en" class="lang">
 <h1>Welcome to EuSkyCloud</h1>
-
 <p>Cloud Solutions | Microsoft 365 | Server Infrastructure</p>
-
 <p>Contact: info@euskycloud.com</p>
+</div>
 
 </body>
 </html>
