@@ -6,54 +6,16 @@
 
 <style>
 
-  body{
-font-family:Arial;
-}
-
-header{
-background:#0b2d4a;
-}
-
-/* HIER deinen neuen Code einfügen */
-
-.hero{
-padding:120px 20px;
-text-align:center;
-background:linear-gradient(135deg,#0b2d4a,#123f66);
-color:white;
-}
-
-.hero h1{
-font-size:48px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:20px;
-margin-bottom:30px;
-}
-
-.btn{
-background:white;
-color:#0b2d4a;
-padding:15px 30px;
-border-radius:6px;
-text-decoration:none;
-font-weight:bold;
-}
-
-<style>
-
 body{
 margin:0;
-font-family:Arial;
+font-family:Arial, Helvetica, sans-serif;
 background:#f5f7fb;
 }
 
 header{
 background:#0a2540;
 color:white;
-padding:20px;
+padding:20px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -61,13 +23,17 @@ align-items:center;
 
 nav a{
 color:white;
-margin-left:20px;
+margin-left:25px;
 text-decoration:none;
 font-weight:bold;
 }
 
+nav a:hover{
+opacity:0.8;
+}
+
 .hero{
-padding:120px 20px;
+padding:140px 20px;
 text-align:center;
 background:linear-gradient(135deg,#0b2d4a,#123f66);
 color:white;
@@ -80,7 +46,7 @@ margin-bottom:20px;
 
 .hero p{
 font-size:20px;
-margin-bottom:30px;
+margin-bottom:35px;
 }
 
 .btn{
@@ -92,25 +58,34 @@ text-decoration:none;
 font-weight:bold;
 }
 
+.btn:hover{
+background:#e8eef6;
+}
+
 .services{
 display:flex;
 justify-content:center;
-gap:30px;
-padding:60px;
+gap:40px;
+padding:70px 40px;
+flex-wrap:wrap;
 }
 
 .card{
 background:white;
 padding:30px;
-width:250px;
+width:260px;
 border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 text-align:center;
 }
 
+.card h3{
+margin-bottom:15px;
+}
+
 footer{
 text-align:center;
-padding:30px;
+padding:35px;
 background:#0a2540;
 color:white;
 margin-top:50px;
@@ -133,6 +108,7 @@ margin-top:50px;
 
 </header>
 
+
 <section class="hero">
 
 <h1>Cloud & Microsoft 365 Lösungen</h1>
@@ -143,24 +119,31 @@ margin-top:50px;
 
 </section>
 
+
 <section class="services">
 
 <div class="card">
 <h3>Microsoft 365</h3>
-<p>Einrichtung, Verwaltung und Support.</p>
+<p>Einrichtung, Lizenzverwaltung und Support für Microsoft 365.</p>
 </div>
 
 <div class="card">
 <h3>Cloud Backup</h3>
-<p>Sichere Backup Lösungen für Unternehmen.</p>
+<p>Sichere Backup-Lösungen für Ihre Unternehmensdaten.</p>
 </div>
 
 <div class="card">
-<h3>IT Infrastruktur</h3>
-<p>Server, Netzwerk und IT Betreuung.</p>
+<h3>Server Infrastruktur</h3>
+<p>Installation und Betreuung moderner Server-Umgebungen.</p>
+</div>
+
+<div class="card">
+<h3>IT Support</h3>
+<p>Schnelle Hilfe bei IT-Problemen für Ihr Unternehmen.</p>
 </div>
 
 </section>
+
 
 <footer>
 
